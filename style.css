@@ -34,7 +34,7 @@ header{
     background-size: 100% 70%;
 }
 .header__logo {
-    margin: 5rem 4rem 3rem 4rem;  
+    margin: 5rem 4rem 3rem 4rem;
 }
 header h1 {
     color: var(--Dark-Grayish-Blue);
@@ -43,7 +43,8 @@ header h1 {
 header p {
     margin: 1rem;
     text-align: center;
-    color: var(--Grayish-Blue)
+    color: var(--Grayish-Blue);
+    line-height: 1.6;
 }
 .header__buttons {
     margin: 1rem;
@@ -64,7 +65,7 @@ header p {
     outline: none;
 }
 .header__buttons--iOS:hover {
-    background-color: #2EE59D;
+    background-color: #2eac79;
     color: #fff;
     transform: translateY(-4px);
 }
@@ -110,6 +111,8 @@ article h2{
 .article--pharagraph{
     color: var(--Grayish-Blue);
     text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 .article__hero {
     display: flex;
@@ -131,10 +134,186 @@ article h2{
     margin: 0.1rem 1rem 3rem 1rem;
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+/*Main-section*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+section h2 {
+    margin: 3rem 3rem 1rem 3rem;
+    color: var(--Dark-Grayish-Blue);
+}
+section p {
+    color: var(--Grayish-Blue);
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 6rem;
+}
+
+/*Main-figure*/
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+figure h2 {
+    margin: 3rem 3rem 1rem 3rem;
+    color: var(--Dark-Grayish-Blue);
+}
+figure p {
+    color: var(--Grayish-Blue);
+    text-align: center;
+    line-height: 1.6;
+}
+.figure__workflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.figure__workflow img {
+    margin: 1rem;
+}
+.figure__workflow h5 {
+    margin: 1rem;
+}
+.figure__workflow p {
+    margin: 1rem;
+}
+.figure__workflow__blacklists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 23%;
+    margin: 2.2rem 1rem 1rem 1rem;
+}
+.figure__workflow__snippets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 23%;
+    margin: 1rem;
+}
+.figure__workflow__preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 23%;
+    margin: 1rem;
+}
+.figure__brands img{
+    margin: 5rem 4rem;
+}
+
+.figure__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.figure__bottom h3 {
+    margin: 3rem 3rem 1rem 3rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.figure__bottom p {
+    width: 65%;
+}
+
+.figure__buttons {
+    margin: 1rem;
+}
+.figure__buttons--iOS {
+    margin: 1rem;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffff;
+    background-color: var(--Strong-Cyan);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px hsl(171, 66%, 44%, 0.4);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.figure__buttons--iOS:hover {
+    background-color: #2eac79;
+    color: #fff;
+    transform: translateY(-4px);
+}
+.figure__buttons--iOS:active {
+    transform: translateY(-1px);
+   }
+
+.figure__buttons--Mac {
+    margin: 1rem;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffff;
+    background-color: var(--Light-Blue);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px hsl(233, 100%, 69%, 0.4);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.figure__buttons--Mac:hover {
+    background-color: #2e7de5;
+    color: #fff;
+    transform: translateY(-4px);
+}
+.figure__buttons--Mac:active {
+    transform: translateY(-1px);
+}
+
+/*Footer*/
+footer {
+    background-color: hsl(201, 11%, 66%, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__logo {
+    width: 100px;
+    margin: 3rem;
+}
+footer ul {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+}
+footer li {
+    margin: 1rem 5rem;
+}
+footer li a {
+    text-decoration: none;
+}
+footer li a:hover{
+    color: var(--Strong-Cyan);
+}
+
+.footer__social {
+    width: 20%;
+    margin-left: 5rem;
+}
+.footer__social img {
+    margin: 0.5rem;
 }
