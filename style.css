@@ -21,10 +21,115 @@ body {
     font-family: "Bai Jamjuree";
     font-size: 18px;
     grid-template-rows: 1fr auto;
-    gap: 2em;
-    padding: 0 4em;
 }
 
+/*Header*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+}
+.header__logo {
+    margin: 5rem 4rem 3rem 4rem;  
+}
+header h1 {
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+}
+header p {
+    margin: 1rem;
+    text-align: center;
+    color: var(--Grayish-Blue)
+}
+.header__buttons {
+    margin: 1rem;
+}
+.header__buttons--iOS {
+    margin: 1rem;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffff;
+    background-color: var(--Strong-Cyan);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px hsl(171, 66%, 44%, 0.4);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.header__buttons--iOS:hover {
+    background-color: #2EE59D;
+    color: #fff;
+    transform: translateY(-4px);
+}
+.header__buttons--iOS:active {
+    transform: translateY(-1px);
+   }
+
+.header__buttons--Mac {
+    margin: 1rem;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffff;
+    background-color: var(--Light-Blue);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px hsl(233, 100%, 69%, 0.4);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.header__buttons--Mac:hover {
+    background-color: #2e7de5;
+    color: #fff;
+    transform: translateY(-4px);
+}
+.header__buttons--Mac:active {
+    transform: translateY(-1px);
+}
+
+/*Main-article*/
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+article h2{
+    margin: 3rem 3rem 1rem 3rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.article--pharagraph{
+    color: var(--Grayish-Blue);
+    text-align: center;
+}
+.article__hero {
+    display: flex;
+    margin: 2rem;
+}
+.article__hero--list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 4rem;
+}
+.article__hero--list h5 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.article__hero--list p {
+    margin: 0.1rem 1rem 3rem 1rem;
+}
 
 .attribution { 
     font-size: 11px; 
