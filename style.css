@@ -114,6 +114,10 @@ article h2{
     margin-bottom: 2rem;
     line-height: 1.6;
 }
+.article__hero--computer.img {
+    width: 100%;
+    height: auto;
+}
 .article__hero {
     display: flex;
     margin: 2rem;
@@ -289,7 +293,7 @@ footer {
 }
 .footer__logo {
     width: 100px;
-    margin: 3rem;
+    margin: 3rem 3rem 3rem 12rem;
 }
 footer ul {
     width: 45%;
@@ -298,7 +302,7 @@ footer ul {
     align-items: center;
     list-style-type: none;
     flex-wrap: wrap;
-    margin: 0 4rem;
+    margin: 0 5rem 0 8rem;
 }
 footer li {
     margin: 1rem 5rem;
@@ -312,8 +316,114 @@ footer li a:hover{
 
 .footer__social {
     width: 20%;
-    margin-left: 5rem;
+    margin-left: 4rem;
 }
 .footer__social img {
     margin: 0.5rem;
+}
+
+@media screen and (max-width: 1350px) {
+
+    header {
+        display: grid;
+        justify-items: center;
+        max-width: 100vw;
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header p {
+        text-align: center;
+    }
+    .header__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article h2 {
+        text-align: center;
+    }
+    article p {
+        text-align: center;
+    }
+    article img {
+        max-width: 70%;
+    }
+    .article__hero {
+        display: grid;
+        justify-items: center;
+    }
+    .article__hero--list h5 {
+        text-align: center;
+    }
+
+    section h2 {
+        text-align: center;
+    }
+    section p {
+        text-align: center;
+    }
+    section img {
+        max-width: 70%;
+    }
+
+    figure h2 {
+        text-align: center;
+    }
+    figure p {
+        text-align: center;
+    }
+    .figure__workflow {
+        display: grid;
+        place-items: center;
+    }
+    .figure__brands {
+        display: grid;
+        place-items: center;
+        margin: 3rem 0;
+    }
+    .figure__brands img{
+        margin: 2rem 1rem;
+    }
+
+    .figure__bottom {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .figure__buttons {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+
+    footer {
+        display: grid;
+        place-items: center;
+        align-items: center;
+    }
+    .footer__logo {
+        margin: 2rem auto;
+        width: 50px;
+    }
+
+    footer ul {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        place-items: center;
+        
+        margin: auto;
+    }
+    footer li {
+        margin: 1rem 0;
+    }
+    .footer__social {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
 }
